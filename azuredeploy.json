@@ -20,7 +20,19 @@
                 "description": "Name of existing file share to be mounted"
             }
         },
-        "sftpUser": {
+        "containerInstanceName": {
+            "type": "string",
+            "metadata": {
+                "description": "Name of the container instance to create"
+            }
+        },
+		"containerName": {
+            "type": "string",
+            "metadata": {
+                "description": "Name of the container"
+            }
+        },
+		"sftpUser": {
             "type": "string",
             "metadata": {
                 "description": "Username to use for SFTP access"
