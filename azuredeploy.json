@@ -32,6 +32,12 @@
                 "description": "Name of the container"
             }
         },
+		"dnsNameLabel": {
+            "type": "String",
+            "metadata": {
+                "description": "FQDN prefix (DNS name label)"
+            }
+        },
 		"sftpUser": {
             "type": "string",
             "metadata": {
@@ -119,7 +125,8 @@
                             "protocol": "Tcp",
                             "port": 22
                         }
-                    ]
+                    ],
+					"dnsNameLabel": "[parameters('dnsNameLabel')]"
                 },
                 "restartPolicy": "OnFailure",
                 "volumes": [
